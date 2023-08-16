@@ -81,7 +81,7 @@ namespace StringManipulation
                 }
             }
 
-            _logger.LogInformation($"Number of concurrecies is:{count}");
+            _logger.LogInformation($"Number of concurrencies is:{count}");
             return count;
         }
 
@@ -90,7 +90,7 @@ namespace StringManipulation
             return input.Pluralize();
         }
 
-        public string QuantintyInWords(string input, int quantity)
+        public string QuantityInWords(string input, int quantity)
         {
             return input.ToQuantity(quantity, ShowQuantityAs.Words);
         }
@@ -105,5 +105,9 @@ namespace StringManipulation
             return fileReader.ReadString(fileName);
         }
 
+        internal bool QuantintyInWords(string? word, int quantity)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

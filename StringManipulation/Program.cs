@@ -1,7 +1,9 @@
 ﻿
 using Microsoft.Extensions.Logging;
 using StringManipulation;
+using System.Diagnostics.CodeAnalysis;
 
+[ExcludeFromCodeCoverage]
 internal class Program
 {
     private static void Main(string[] args)
@@ -26,7 +28,7 @@ internal class Program
             Console.WriteLine("5. truncate string");
             Console.WriteLine("6. check if the word is palindrome");
             Console.WriteLine("7. count character concurrency");
-            Console.WriteLine("8. plularize a word");
+            Console.WriteLine("8. pluralize a word");
             Console.WriteLine("9. express a quantity in words");
             Console.WriteLine("10. convert from roman to number");
             Console.WriteLine("11. read text file");
